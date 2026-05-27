@@ -1,6 +1,6 @@
 ---
 whiskers:
-  version: "2.2.0"
+  version: "^2.2.0"
   matrix:
     - flavor
   filename: "themes/{{ flavor.identifier }}.conf"
@@ -25,7 +25,11 @@ selection_background    #{{ rosewater.hex }}
 cursor                  #{{ rosewater.hex }}
 cursor_text_color       #{{ base.hex }}
 
-# URL underline color when hovering with mouse
+# Scrollbar colors
+scrollbar_handle_color  #{{ overlay2.hex }}
+scrollbar_track_color   #{{ surface1.hex }}
+
+# URL color when hovering with mouse
 url_color               #{{ rosewater.hex }}
 
 # Kitty window border colors
